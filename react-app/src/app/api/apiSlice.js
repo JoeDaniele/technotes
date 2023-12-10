@@ -14,7 +14,9 @@ const baseQuery = fetchBaseQuery({
     }
     return headers;
     /**
-     * return from prepareHeaders func
+     * BaseURL for API reqs
+     * fetchBaseQuery w/ specific conditions - credentials 'include'
+     * prepareHeaders adds the authorization to to the request if a token exists in store
      * this is applied to every request we send
      */
   },
