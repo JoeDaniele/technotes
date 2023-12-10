@@ -16,9 +16,9 @@ const authSlice = createSlice({
     },
   },
 });
-
+// Exporting action creators
 export const { setCredentials, logOut } = authSlice.actions;
-
+// Exporting the reducer
 export default authSlice.reducer;
-
+// Selector function to retrieve the current token from the state
 export const selectCurrentToken = (state) => state.auth.token;
