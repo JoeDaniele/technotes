@@ -4,7 +4,7 @@ import { setCredentials } from '../../features/auth/authSlice';
 //payload and sets that token in our redux state (store)
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: 'https://technotes-api.onrender.com',
+  baseUrl: 'http://localhost:3500',
   credentials: 'include',
   prepareHeaders: (headers, { getState }) => {
     const token = getState().auth.token;
